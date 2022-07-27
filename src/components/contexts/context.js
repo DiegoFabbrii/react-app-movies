@@ -7,7 +7,7 @@ function ContextsProvider({ children }) {
     const [isVisible, setIsVisible] = useState(false);
     const [theme, setTheme] = useState(light);
 
-    // BUTTON BACK TO TOP FEATURE
+    //BUTTON BACK TO TOP FEATURE
     const buttonVisibility = () =>
         window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false);
 

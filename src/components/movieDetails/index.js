@@ -7,6 +7,7 @@ import Back from "../back";
 function MovieDetails() {
     const movie = useMovie();
     const imgPath = "https://image.tmdb.org/t/p/w500/";
+    console.log(movie);
 
     return (
         <>
@@ -34,7 +35,7 @@ function MovieDetails() {
 
                                 <Styled.VoteAvarage>
                                     {<AiFillStar />}
-                                    <span>{item.vote_average}</span>
+                                    <span>{item.vote_average.toFixed(1)}</span>
                                 </Styled.VoteAvarage>
                                 <h3>Sinopse</h3>
                                 <p>{item.overview}</p>
